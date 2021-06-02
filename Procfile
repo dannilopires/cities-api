@@ -1,1 +1,2 @@
-web: java $JAVA_OPTS -jar target/Cidades-API-0.0.1-SNAPSHOT.jar -Dserver.port=$PORT $JAR_OPTS
+web: java -jar -Dspring.profiles.active=heroku build/libs/Cidades-API-0.0.1-SNAPSHOT.jar -Dserver.port=$PORT
+
